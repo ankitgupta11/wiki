@@ -5,12 +5,10 @@
 {% endblock %}
 
 {% block body %}
-    <h1>{{ title }}</h1>
-
     <div>
         {% if exists %}
-            {{ entry }}
-            <button>Edit</button>
+            {{ entry | safe }}
+            <a href="{% url 'edit' title=title %}"><button>Edit</button></a>
         {% else %}
         	Entry not found
         {% endif %}

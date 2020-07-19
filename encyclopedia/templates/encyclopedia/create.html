@@ -10,7 +10,12 @@
     <div>
         <form action="{% url 'create' %}" method="post">
             {% csrf_token %}
-            {{ form }}
+            {% for field in form %}
+                <div class="fieldWrapper">
+                    {{ field.label_tag }} {{ field }}
+                    {{ field.errors }}
+                </div>
+            {% endfor %}
             <input type="submit">
         </form>
     </div>
