@@ -29,28 +29,30 @@ def index(request):
     })
 
 def entry(request, title):
-    return render(request, "encyclopedia/entry.html", {
-        "exists": util.get_entry(title) is not None,
-        "title": title.capitalize(),
-        "entry": markdown2.markdown(util.get_entry(title))
-    })
-
-def search(request):
-    key = request.GET["q"]
-    #entry(request, title=title)
-    if util.get_entry(key) is not None:
-        return HttpResponseRedirect(reverse("entry", args=[key]))
+    entry = ""
+    exists = util.get_entry(title) is not None
+    if exists:
+        entry = markdown2.markdown(util.get_entry(title))
+        return render(request, "encyclopedia/entry.html", {
+            "exists": exists,
+            "title": title,
+            "entry": entry
+        })
     else:
         search_results = []
         for entry in util.list_entries():
-            if key.lower() in entry.lower():
+            if title.lower() in entry.lower():
                 search_results.append(entry)
 
-        return render(request, "encyclopedia/search.html", {
-            "exists": len(search_results) > 0,
-            "key": key,
+        return render(request, "encyclopedia/entry.html", {
+            "multiple_exist": len(search_results) > 0,
+            "title": title,
             "entries": search_results
-        })
+        })        
+
+def search(request):
+    key = request.GET["q"]
+    return HttpResponseRedirect(reverse("entry", args=[key]))
 
 def create(request):
     if request.method == "POST":

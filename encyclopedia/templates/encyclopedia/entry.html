@@ -5,12 +5,22 @@
 {% endblock %}
 
 {% block body %}
-    <div>
+   <h1>{{ title }}</h1>
+
+   <div>
         {% if exists %}
             {{ entry | safe }}
-            <a href="{% url 'edit' title=title %}"><button>Make changes</button></a>
+            <a href="{% url 'edit' title=title %}"><button>Edit</button></a>
+        {% elif multiple_exist %}
+        	<p><strong>{{ title }}</strong> may stand for:</p>
+    		<ul>
+        		{% for entry in entries %}
+            		<li><a href="{% url 'entry' title=entry %}"> {{ entry }} </a></li>
+        		{% endfor %}
+    		</ul>
         {% else %}
-        	Entry not found
+    		<p>The page "<em>{{ title }}</em>" does not exist.</p>
+        	<p>There were no results matching the query.</p>
         {% endif %}
     </div>
 

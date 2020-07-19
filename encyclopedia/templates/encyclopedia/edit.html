@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-    <h1>{{ title }} / Edit</h1>
+    <h1>Editting {{ title }}</h1>
 
     <div class="form">
         <form action="{% url 'edit' title=title %}" method="post">
@@ -16,7 +16,7 @@
         			{{ field.errors }}
     			</div>
 			{% endfor %}
-            <input type="submit" value="Save changes">
+            <input type="submit" value="Publish changes">
         </form>
     </div>
 
