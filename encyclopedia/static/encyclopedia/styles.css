@@ -3,13 +3,30 @@ body {
     background-color: white;
 }
 
+.row {
+    width: 100%;
+}
+
 code {
     white-space: pre;
 }
 
+a {
+    color: #0645ad;
+}
+
+ul {
+    margin-left: 30px;
+    margin-top: 25px;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 2px;
+}
+
 h1 {
     margin-top: 0px;
-    padding-top: 20px;
 }
 
 textarea {
@@ -19,11 +36,108 @@ textarea {
 
 .main {
     padding: 16px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #202122;
+    border-left: 1px solid #a7d7f9;
 }
 
 .main h1 {
     font-family: 'Linux Libertine','Georgia','Times',serif;
+    border-bottom: 1px solid #a2a9b1;
+    font-size: 30px;
+    line-height: 1.3;
+    color: #000;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
 }
+
+.main p {
+    margin: 7px 0;
+}
+
+.main div.form {
+    margin-top: 30px;
+}
+
+div.main button, div.main input[type="submit"] {
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    height: 30px;
+    min-width: 120px;
+    padding: 0 12px;
+    border: 1px solid #3079ed;
+    font-family: arial,sans-serif;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.main button:hover, div.main input[type="submit"]:hover {
+    background-color: #357ae8;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    border: 1px solid #2f5bb7;
+    border-image: initial;
+    color: #fff;
+}
+
+div.fieldWrapper {
+    margin-bottom: 20px;
+}
+
+div.fieldWrapper label {
+    width: 163px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 6px;
+}
+
+div.fieldWrapper input[type="text"] {
+    width: 500px;
+    height: 40px;
+    padding: 1px 8px;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+}
+
+div.fieldWrapper textarea {
+    min-width: 500px;
+    max-width: 500px;
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+    min-width: 200px;
+    padding: 6px 8px;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    vertical-align: bottom;
+}
+
+div.fieldWrapper input[type="text"]:focus, div.fieldWrapper textarea:focus {
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+div.fieldWrapper .errorlist {
+    list-style: none;
+    margin-left: 129px;
+    font-size: 14px;
+    color: red;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+div.main button:focus, div.main input[type="submit"]:focus {
+    box-shadow: inset 0 0 0 1px #fff;
+    border: rgba(0,0,0,0) solid 1px;
+    outline: rgba(0,0,0,0) 0;
 
 .search {
     width: 100%;
@@ -32,11 +146,25 @@ textarea {
 }
 
 .sidebar {
-    background-color: #f0f0f0;
+    background-color: #f6f6f6;
     height: 100vh;
-    padding: 20px;
+    padding: 5px 20px 5px;
+    font-size: 14px;
+    margin: 20px;
+}
+
+.sidebar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-left: -45px;
 }
 
 .sidebar h2 {
     margin-top: 5px;
+}
+
+.sidebar div {
+    margin-left: 20px;
+    
 }

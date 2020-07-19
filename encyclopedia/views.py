@@ -14,6 +14,7 @@ class NewEntryForm(forms.Form):
     def clean(self):
         cd = self.cleaned_data
         #if not self.edit_mode:
+        if cd.get('title') is None: cd['title'] = "" 
         if cd.get('title').lower() in (entry.lower() for entry in util.list_entries()):
             self.add_error('title', "This entry already exists")
         return cd 

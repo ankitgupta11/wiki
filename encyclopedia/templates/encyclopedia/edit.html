@@ -7,7 +7,7 @@
 {% block body %}
     <h1>{{ title }} / Edit</h1>
 
-    <div>
+    <div class="form">
         <form action="{% url 'edit' title=title %}" method="post">
             {% csrf_token %}
 			{% for field in form %}
@@ -16,7 +16,7 @@
         			{{ field.errors }}
     			</div>
 			{% endfor %}
-            <input type="submit">
+            <input type="submit" value="Save changes">
         </form>
     </div>
 

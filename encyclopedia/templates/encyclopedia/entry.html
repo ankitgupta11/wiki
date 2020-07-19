@@ -8,7 +8,7 @@
     <div>
         {% if exists %}
             {{ entry | safe }}
-            <a href="{% url 'edit' title=title %}"><button>Edit</button></a>
+            <a href="{% url 'edit' title=title %}"><button>Make changes</button></a>
         {% else %}
         	Entry not found
         {% endif %}
