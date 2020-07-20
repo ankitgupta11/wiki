@@ -2,16 +2,104 @@ HTML is a markup language that can be used to define the structure of a web page
 
 
 
+
+
+
+
 * headings
+
+
+
+
+
+
 
 * paragraphs
 
+
+
+
+
+
+
 * lists
 
+
+
+
+
+
+
 * links
+
+
+
+
+
+
 
 * and more!
 
 
 
-The most recent major version of HTML is HTML5.
+
+
+
+
+The most recent major version of HTML is HTML5.
+
+
+
+
+
+
+
+**Hypertext Markup Language** (**HTML**) is the standard [markup language](/wiki/Markup_language "Markup language") for documents designed to be displayed in a [web browser](/wiki/Web_browser "Web browser"). It can be assisted by technologies such as [Cascading Style Sheets](/wiki/Cascading_Style_Sheets "Cascading Style Sheets") (CSS) and [scripting languages](/wiki/Scripting_language "Scripting language") such as [JavaScript](/wiki/JavaScript "JavaScript").
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Web browsers](/wiki/Web_browser "Web browser") receive HTML documents from a [web server](/wiki/Web_server "Web server") or from local storage and [render](/wiki/Browser_engine "Browser engine") the documents into multimedia web pages. HTML describes the structure of a [web page](/wiki/Web_page "Web page") [semantically](/wiki/Semantic_Web) and originally included cues for the appearance of the document.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[HTML elements](/wiki/HTML_element "HTML element") are the building blocks of HTML pages. With HTML constructs, [images](/wiki/HTML_element#Images_and_objects "HTML element") and other objects such as [interactive forms](/wiki/Fieldset "Fieldset") may be embedded into the rendered page. HTML provides a means to create [structured documents](/wiki/Structured_document "Structured document") by denoting structural [semantics](/wiki/Semantics "Semantics") for text such as headings, paragraphs, lists, [links](/wiki/Hyperlink "Hyperlink"), quotes and other items. HTML elements are delineated by _tags_, written using [angle brackets](/wiki/Bracket#Angle_brackets "Bracket"). Tags such as 'img' and 'input' directly introduce content into the page. Other tags such as 'p' surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HTML can embed programs written in a [scripting language](/wiki/Scripting_language "Scripting language") such as [JavaScript](/wiki/JavaScript "JavaScript"), which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The [World Wide Web Consortium](/wiki/World_Wide_Web_Consortium "World Wide Web Consortium") (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.

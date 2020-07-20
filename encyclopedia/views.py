@@ -23,6 +23,7 @@ class EditEntryForm(forms.Form):
     title = forms.CharField(label="Title", disabled=True)
     content = forms.CharField(label="Description", widget=forms.Textarea, error_messages={"required": "Please enter the Description"})
 
+
 def index(request):
     return render(request, "encyclopedia/index.html", {
         "entries": util.list_entries()

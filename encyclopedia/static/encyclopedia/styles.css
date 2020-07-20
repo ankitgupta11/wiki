@@ -7,31 +7,18 @@ body {
     width: 100%;
 }
 
-code {
-    white-space: pre;
-}
-
 a {
     color: #0645ad;
 }
 
-ul {
+ul, ol {
     margin-left: 30px;
     margin-top: 20px;
     padding: 0;
 }
 
-ul li {
+ul li, ol li {
     margin-bottom: 2px;
-}
-
-h1 {
-    margin-top: 0px;
-}
-
-textarea {
-    height: 90vh;
-    width: 80%;
 }
 
 .main {
@@ -82,7 +69,6 @@ div.main button:hover, div.main input[type="submit"]:hover {
     background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
     border: 1px solid #2f5bb7;
     border-image: initial;
-    color: #fff;
 }
 
 div.fieldWrapper {
@@ -106,7 +92,7 @@ div.fieldWrapper input[type="text"] {
 }
 
 div.fieldWrapper textarea {
-    min-width: 500px;
+    width: 500px;
     max-width: 500px;
     height: 150px;
     min-height: 150px;
@@ -178,7 +164,7 @@ div.main button:focus, div.main input[type="submit"]:focus {
 
 .sidebar h2 {
     margin-top: 10px;
-    margin-right: 2px;
+    margin-right: 5px;
     text-align: center;
     font-family: sans-serif;
 }
